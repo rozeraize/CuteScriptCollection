@@ -15,11 +15,15 @@ bash -c "timeout 7s bash -c 'cmatrix -m'" %*
 cls
 
 @echo off
-bash -c "timeout 7s bash -c 'cmatrix -m | lolcat'" %*
+bash -c "timeout 10s bash -c 'cmatrix -m | lolcat'" %*
 cls
 
 @echo off
-bash -c "timeout 7s bash -c 'cmatrix | lolcat'" %*
+bash -c "timeout 10s bash -c 'cmatrix | lolcat'" %*
+cls
+
+@echo off
+bash -c "timeout 7s bash -c 'cmatrix -r'" %*
 cls
 
 @echo off
@@ -43,30 +47,30 @@ timeout /t 1
 cls
 echo growing...
 echo [==......] %*
-timeout /nobreak /t 1
+timeout /t 1
 cls
 echo growing...
 echo [===.....] %*
-timeout /nobreak /t 1
+timeout /t 1
 cls
 echo growing...
 echo [====...] %*
-timeout/nobreak  /t 1
+timeout  /t 1
 cls
 echo growing...
 echo [=====..] %*
-timeout /nobreak /t 1
+timeout /t 1
 cls
 echo growing...
 echo [======.] %*
-timeout /nobreak /t 1
+timeout /t 1
 cls
 echo growing...
 echo [=======] %*
-timeout /nobreak /t 1
+timeout  /t 1
 cls
-echo [=======]
-echo Finished Growing! %*
+echo Finished Growing!
+echo [=======] %*
 pause
 cls
 
@@ -130,7 +134,7 @@ bash -c "cowsay -f flaming-sheep 'HELP I AM ON FIRE' | lolcat" %*
 pause
 
 @echo off
-bash -c "timeout 20s bash -c 'cbonsai -l -t .04'" %*
+bash -c "cbonsai -l -t .04" %*
 
 @echo off
 bash -c "cowsay -f tux 'Shutting linux down' " %*
