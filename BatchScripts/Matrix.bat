@@ -8,9 +8,9 @@ pause
 echo Loading...
 echo Please wait this will only take a moment
 
-cls
 @echo off
 bash -c "cmatrix" %*
+cls
 
 @echo off
 echo shutting linux off.. %*
