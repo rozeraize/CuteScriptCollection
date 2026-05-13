@@ -7,7 +7,7 @@ bash -c "elinks" %*
 
 cls
 @echo off
-bash -c "cowsay -f tux 'Shutting linux down' " %*
+bash -c "cowsay -f tux 'Shutting linux down' | lolcat" %*
 
 @echo off
 wsl.exe --shutdown %*
