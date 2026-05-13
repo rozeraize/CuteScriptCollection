@@ -133,7 +133,7 @@ pause
 bash -c "cbonsai -l -t .05" %*
 
 @echo off
-echo shutting linux off.. %*
+bash -c "cowsay -f tux Shutting linux down" %*
 
 @echo off
 wsl.exe --shutdown %*
