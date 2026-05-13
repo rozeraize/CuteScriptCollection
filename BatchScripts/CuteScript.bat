@@ -130,10 +130,10 @@ bash -c "cowsay -f flaming-sheep 'HELP I AM ON FIRE' | lolcat" %*
 pause
 
 @echo off
-bash -c "cbonsai -l -t .05" %*
+bash -c "timeout 20s bash -c 'cbonsai -l -t .04'" %*
 
 @echo off
-bash -c "cowsay -f tux Shutting linux down" %*
+bash -c "cowsay -f tux 'Shutting linux down' " %*
 
 @echo off
 wsl.exe --shutdown %*
