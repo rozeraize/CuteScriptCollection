@@ -8,7 +8,7 @@ bash -c "cbonsai -l -t .01 -i -w 1  --verbose" %*
 cls
 
 @echo off 
-echo Shutting down... %*
+bash -c "cowsay -f tux Shutting linux down" %*
 
 @echo off
 wsl.exe --shutdown %*
